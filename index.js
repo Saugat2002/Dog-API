@@ -6,7 +6,7 @@ const fetchDog = () => {
     .then((response) => response.json())
     .then((json) => {
       console.log(json.message);
-      dogImageDiv.innerHTML = `<img src=${json.message} alt="DogImage">`;
+      dogImageDiv.innerHTML = `<img src=${json.message} alt="DogImage" height="400">`;
     });
 };
 
